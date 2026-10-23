@@ -1,1 +1,313 @@
-# supriya-fashion
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supriya Fashion | Everyday Style</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="utility-bar">
+      <span>Welcome to Supriya Fashion</span>
+      <span>Easy WhatsApp ordering | New styles every week</span>
+    </div>
+    <nav class="nav">
+      <a class="logo" href="#home"><strong>SUPRIYA</strong><small>FASHION</small></a>
+      <input type="text" id="search" placeholder="Search products...">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="btn primary">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
+      <button class="account-button" id="account-button" type="button">Sign in</button>
+      <div id="cart-icon">🛒 <span id="cart-count">0</span></div>
+    </nav>
+    <nav class="categories-nav">
+      <ul class="categories">
+        <li data-category="all" class="active">All</li>
+        <li class="category-group">
+          <span data-category="saree">Sarees</span>
+          <ul class="category-submenu">
+            <li data-category="saree" data-subcategory="silk">Silk Sarees</li>
+            <li data-category="saree" data-subcategory="cotton">Cotton Sarees</li>
+          </ul>
+        </li>
+        <li class="category-group">
+          <span data-category="kurti">Kurtis</span>
+          <ul class="category-submenu">
+            <li data-category="kurti" data-subcategory="cotton">Cotton Kurtis</li>
+            <li data-category="kurti" data-subcategory="casual">Casual Kurtis</li>
+          </ul>
+        </li>
+        <li class="category-group">
+          <span data-category="dress">Dresses</span>
+          <ul class="category-submenu">
+            <li data-category="dress" data-subcategory="party">Party Dresses</li>
+            <li data-category="dress" data-subcategory="casual">Casual Dresses</li>
+          </ul>
+        </li>
+        <li class="category-group">
+          <span data-category="menswear">Men's Wear</span>
+          <ul class="category-submenu">
+            <li data-category="menswear" data-subcategory="shirts">Shirts</li>
+            <li data-category="menswear" data-subcategory="tshirts">T-Shirts</li>
+            <li data-category="menswear" data-subcategory="trousers">Trousers</li>
+            <li data-category="menswear" data-subcategory="jackets">Jackets</li>
+          </ul>
+        </li>
+        <li class="category-group">
+          <span data-category="kidswear">Kids' Wear</span>
+          <ul class="category-submenu">
+            <li data-category="kidswear" data-subcategory="girls">Girls</li>
+            <li data-category="kidswear" data-subcategory="boys">Boys</li>
+            <li data-category="kidswear" data-subcategory="dresses">Kids' Dresses</li>
+            <li data-category="kidswear" data-subcategory="sets">Sets</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="hero-kicker">THE NEW SEASON EDIT</p>
+      <h1>Hand Crafted Styles, Honest Prices</h1>
+      <p>Discover sarees and services tailored for you.</p>
+      <a href="#products" class="btn primary">Shop Now</a>
+    </section>
+
+    <section class="service-strip" aria-label="Shopping benefits">
+      <span><strong>01</strong> Fresh arrivals weekly</span>
+      <span><strong>02</strong> UPI and cash on delivery</span>
+      <span><strong>03</strong> Personal WhatsApp support</span>
+    </section>
+
+    <section id="products" class="grid">
+      <h2 class="section-title">New arrivals</h2>
+      <article class="card" data-category="saree" data-subcategory="silk cotton">
+        <img src="assets/veer1.jpg" alt="Silk saree in maroon">
+        <h3>Maroon Silk Saree</h3>
+        <p>Size-M,L,XL,XXL; Fabric-Cotton; Sleeves-Half Sleeves; Length-47inches; Price-320+5%Gst.</p>
+        <span class="rating">4.5 ⭐</span>
+        <input type="number" min="1" value="1" class="quantity-input">
+        <button class="btn add-to-cart">Add to Cart</button>
+      </article>
+      <!-- Repeat cards as needed -->
+      <article class="card" data-category="kurti" data-subcategory="cotton casual">
+        <img src="assets/veer2.jpg" alt="Silk saree in maroon">
+        <h3>Maroon Kurti</h3>
+        <p>Size-M,L,XL,XXL; Fabric-Cotton; Sleeves-Half Sleeves; Length-47inches; Price-320+5%Gst.</p>
+        <span class="rating">4.5 ⭐</span>
+        <input type="number" min="1" value="1" class="quantity-input">
+        <button class="btn add-to-cart">Add to Cart</button>
+      </article>
+      <!-- Repeat cards as needed -->
+      <article class="card" data-category="dress" data-subcategory="party casual">
+        <img src="assets/veer3.jpg" alt="Silk saree in maroon">
+        <h3>Maroon Dress</h3>
+        <p>Size-M,L,XL,XXL; Fabric-Cotton; Sleeves-Half Sleeves; Length-47inches; Price-320+5%Gst.</p>
+        <span class="rating">4.5 ⭐</span>
+        <input type="number" min="1" value="1" class="quantity-input">
+        <button class="btn add-to-cart">Add to Cart</button>
+      </article>
+      <!-- Repeat cards as needed -->
+      <article class="card" data-category="saree" data-subcategory="silk">
+        <img src="assets/veer4.jpg" alt="Silk saree in maroon">
+        <h3>Maroon Silk Saree</h3>
+        <p>Size-M,L,XL,XXL; Fabric-Cotton; Sleeves-Half Sleeves; Length-47inches; Price-320+5%Gst.</p>
+        <span class="rating">4.5 ⭐</span>
+        <input type="number" min="1" value="1" class="quantity-input">
+        <button class="btn add-to-cart">Add to Cart</button>
+      </article>
+      <!-- Repeat cards as needed -->
+    </section>
+
+    <section id="menswear" class="grid">
+      <h2 class="section-title">Men's Wear</h2>
+      <article class="card" data-category="menswear" data-subcategory="shirts">
+        <img src="assets/veer1.jpg" alt="Navy blue men's casual shirt">
+        <h3>Classic Navy Casual Shirt</h3>
+        <p>Sizes-S,M,L,XL,XXL; Fabric-100% Cotton; Fit-Regular; Sleeves-Full Sleeves; Color-Navy Blue; Price-899+5%Gst.</p>
+        <span class="rating">4.6 ⭐</span>
+        <input type="number" min="1" value="1" class="quantity-input">
+        <button class="btn add-to-cart">Add to Cart</button>
+      </article>
+      <article class="card" data-category="menswear" data-subcategory="tshirts">
+        <img src="assets/veer2.jpg" alt="Black men's polo t-shirt">
+        <h3>Essential Black Polo T-Shirt</h3>
+        <p>Sizes-S,M,L,XL,XXL; Fabric-Cotton Pique; Fit-Slim Fit; Sleeves-Half Sleeves; Color-Black; Price-599+5%Gst.</p>
+        <span class="rating">4.5 ⭐</span>
+        <input type="number" min="1" value="1" class="quantity-input">
+        <button class="btn add-to-cart">Add to Cart</button>
+      </article>
+      <article class="card" data-category="menswear" data-subcategory="trousers">
+        <img src="assets/veer3.jpg" alt="Beige men's chinos trousers">
+        <h3>Relaxed Beige Chinos</h3>
+        <p>Waist-30,32,34,36,38; Fabric-Stretch Cotton; Fit-Straight Fit; Length-Full Length; Color-Beige; Price-999+5%Gst.</p>
+        <span class="rating">4.4 ⭐</span>
+        <input type="number" min="1" value="1" class="quantity-input">
+        <button class="btn add-to-cart">Add to Cart</button>
+      </article>
+      <article class="card" data-category="menswear" data-subcategory="jackets">
+        <img src="assets/veer4.jpg" alt="Blue men's denim jacket">
+        <h3>Vintage Blue Denim Jacket</h3>
+        <p>Sizes-S,M,L,XL,XXL; Fabric-Denim; Fit-Regular; Sleeves-Full Sleeves; Color-Blue; Price-1299+5%Gst.</p>
+        <span class="rating">4.7 ⭐</span>
+        <input type="number" min="1" value="1" class="quantity-input">
+        <button class="btn add-to-cart">Add to Cart</button>
+      </article>
+    </section>
+    <section id="kidswear" class="grid">
+      <h2 class="section-title">Kids' Wear</h2>
+      <article class="card" data-category="kidswear" data-subcategory="girls dresses">
+        <img src="assets/veer1.jpg" alt="Girls floral party dress">
+        <h3>Floral Party Dress</h3>
+        <p>Sizes-2Y,4Y,6Y,8Y,10Y; Fabric-Cotton Blend; Fit-Regular; Sleeves-Short Sleeves; Color-Pink Floral; Price-699+5%Gst.</p>
+        <span class="rating">4.6 ⭐</span>
+        <input type="number" min="1" value="1" class="quantity-input">
+        <button class="btn add-to-cart">Add to Cart</button>
+      </article>
+      <article class="card" data-category="kidswear" data-subcategory="boys">
+        <img src="assets/veer2.jpg" alt="Boys printed cotton t-shirt">
+        <h3>Everyday Printed T-Shirt</h3>
+        <p>Sizes-2Y,4Y,6Y,8Y,10Y; Fabric-100% Cotton; Fit-Regular; Sleeves-Half Sleeves; Color-Blue Print; Price-399+5%Gst.</p>
+        <span class="rating">4.5 ⭐</span>
+        <input type="number" min="1" value="1" class="quantity-input">
+        <button class="btn add-to-cart">Add to Cart</button>
+      </article>
+      <article class="card" data-category="kidswear" data-subcategory="sets">
+        <img src="assets/veer3.jpg" alt="Kids denim dungaree set">
+        <h3>Denim Dungaree Set</h3>
+        <p>Sizes-2Y,4Y,6Y,8Y,10Y; Fabric-Soft Denim; Fit-Comfort Fit; Set Includes-Dungaree and T-Shirt; Color-Blue; Price-899+5%Gst.</p>
+        <span class="rating">4.7 ⭐</span>
+        <input type="number" min="1" value="1" class="quantity-input">
+        <button class="btn add-to-cart">Add to Cart</button>
+      </article>
+      <article class="card" data-category="kidswear" data-subcategory="sets">
+        <img src="assets/veer4.jpg" alt="Kids festive kurta set">
+        <h3>Festive Kurta Set</h3>
+        <p>Sizes-2Y,4Y,6Y,8Y,10Y; Fabric-Cotton Silk; Fit-Regular; Set Includes-Kurta and Pajama; Color-Maroon; Price-999+5%Gst.</p>
+        <span class="rating">4.8 ⭐</span>
+        <input type="number" min="1" value="1" class="quantity-input">
+        <button class="btn add-to-cart">Add to Cart</button>
+      </article>
+    </section>
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>Supriya is a creative and passionate fashion designer whose work blends tradition with modern aesthetics. With a keen eye for detail and a deep understanding of fabrics, colors, and silhouettes, she crafts designs that celebrate individuality while staying true to timeless style.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p class="contact-email">
+        Email us directly:
+        <a href="mailto:supriyafashion@gmail.com?subject=Enquiry%20for%20Supriya%20Fashion">supriyafashion@gmail.com</a>
+      </p>
+      <form id="contactForm">
+        <label>Name <input type="text" name="Supriya v" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" required></textarea></label>
+        <button type="submit" class="btn primary">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 MyBrand</small>
+  </footer>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-cart">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <p id="cart-total">Total: $0</p>      <div class="payment-methods">
+        <h3>Payment Method</h3>
+        <label><input type="radio" name="payment" value="credit" checked> Credit Card</label>
+        <label><input type="radio" name="payment" value="debit"> Debit Card</label>
+        <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+        <label><input type="radio" name="payment" value="upi"> UPI</label>
+        <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+        <label for="upi-app" id="upi-app-label" hidden>UPI App</label>
+        <select id="upi-app" hidden>
+          <option value="PhonePe">PhonePe</option>
+          <option value="Paytm">Paytm</option>
+          <option value="Google Pay">Google Pay</option>
+          <option value="BHIM UPI">BHIM UPI</option>
+          <option value="Amazon Pay UPI">Amazon Pay UPI</option>
+          <option value="Other UPI app">Other UPI app</option>
+        </select>
+      </div>
+      <div class="checkout-details">
+        <label for="customer-name">Your name</label>
+        <input id="customer-name" type="text" required>
+        <label for="customer-phone">Your phone number</label>
+        <input id="customer-phone" type="tel" required>
+      </div>
+      <button class="btn primary" id="checkout">Send Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <a class="whatsapp-button" href="https://wa.me/919916851560?text=Hello%20Supriya%20Fashion%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products." target="_blank" rel="noopener" aria-label="Chat with Supriya Fashion on WhatsApp" title="Chat with us on WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path d="M16 3.2a12.7 12.7 0 0 0-10.9 19.2L3.4 28.8l6.6-1.7A12.8 12.8 0 1 0 16 3.2Zm0 23.2c-2 0-3.9-.6-5.6-1.7l-.4-.3-3.9 1 1-3.8-.3-.4a10.3 10.3 0 1 1 9.2 5.2Zm5.7-7.7c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.4 8.4 0 0 1-2.5-1.5 9.2 9.2 0 0 1-1.7-2.1c-.2-.4 0-.6.2-.8l.5-.6c.2-.2.2-.4.3-.6s0-.4-.1-.6c-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.8.4s-1.1 1-1.1 2.5 1.1 2.9 1.3 3.1c.2.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.2-.2-.4-.3-.7-.4Z" />
+    </svg>
+  </a>
+  <a class="email-button" href="mailto:supriyafashion@gmail.com?subject=Enquiry%20for%20Supriya%20Fashion" aria-label="Email Supriya Fashion" title="Email us">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path d="M4.5 7.5h23A2.5 2.5 0 0 1 30 10v12a2.5 2.5 0 0 1-2.5 2.5h-23A2.5 2.5 0 0 1 2 22V10a2.5 2.5 0 0 1 2.5-2.5Zm0 2.8v.2l11.5 7.4L27.5 10v-.2h-23Zm23 11.4v-8.1l-10.7 6.9a1.5 1.5 0 0 1-1.6 0L4.5 13.6v8.1c0 .5.4.8.8.8h21.4c.4 0 .8-.3.8-.8Z" />
+    </svg>
+  </a>
+  <button id="back-to-top" class="btn">Products</button>
+
+  <div id="products-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-products">&times;</span>
+      <h2>Quick View Products</h2>
+      <div class="products-grid">
+        <div class="product-shortcut">
+          <img src="assets/veer1.jpg" alt="Product 1">
+          <h4>Maroon Silk Saree</h4>
+          <p>₹320</p>
+        </div>
+        <div class="product-shortcut">
+          <img src="assets/veer2.jpg" alt="Product 2">
+          <h4>Maroon Silk Saree</h4>
+          <p>₹320</p>
+        </div>
+        <div class="product-shortcut">
+          <img src="assets/veer3.jpg" alt="Product 3">
+          <h4>Maroon Silk Saree</h4>
+          <p>₹320</p>
+        </div>
+        <div class="product-shortcut">
+          <img src="assets/veer4.jpg" alt="Product 4">
+          <h4>Maroon Silk Saree</h4>
+          <p>₹320</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="account-modal" class="modal">
+    <div class="modal-content account-modal-content">
+      <button class="modal-close" id="close-account" type="button" aria-label="Close account dialog">&times;</button>
+      <h2 id="account-title">Your account</h2>
+      <p id="account-status">Sign in to view your private account and order history.</p>
+      <form id="account-form">
+        <label id="account-name-field">Full name<input id="account-name" type="text" autocomplete="name"></label>
+        <label>Email<input id="account-email" type="email" autocomplete="email" required></label>
+        <label>Password<input id="account-password" type="password" autocomplete="current-password" minlength="6" required></label>
+        <label id="account-phone-field">Phone number<input id="account-phone" type="tel" autocomplete="tel"></label>
+        <button class="btn primary" id="account-submit" type="submit">Sign in</button>
+      </form>
+      <button class="account-switch" id="account-switch" type="button">Create a new account</button>
+      <div id="account-history" hidden></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
